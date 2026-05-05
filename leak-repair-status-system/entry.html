@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fill Table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="entry">
+  <header class="app-header small sticky">
+    <div class="header-actions">
+      <a id="backLink" class="back" href="locations.html">← Locations</a>
+      <a class="back portal-back" href="../webindex.html" title="Return to main web portal">Main Portal</a>
+    </div>
+    <div class="title-block">
+      <h1 id="sheetTitle">Sheet</h1>
+      <p id="sheetInfo">Region</p>
+    </div>
+    <button id="saveTopBtn" class="btn save">Save / Update</button>
+  </header>
+
+  <main class="container full">
+    <section class="box controls">
+      <div class="control-left">
+        <label>Switch sheet</label>
+        <select id="switchSheet" class="field"></select>
+      </div>
+      <div class="control-right">
+        <button id="clearBtn" class="btn light">Clear Saved</button>
+      </div>
+      <div id="status" class="status">Ready.</div>
+    </section>
+
+    <section class="sheet-box">
+      <div id="excelTable" class="excel-scroll"></div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
